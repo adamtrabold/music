@@ -135,13 +135,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .parallax-container {
-        margin: 12px;
-        height: calc(100vh - 300px);
-    }
-
     .bottom-content {
-        margin: 12px;
         flex-direction: column;
         gap: 24px;
     }
