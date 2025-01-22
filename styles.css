@@ -16,7 +16,7 @@ body {
 
 .parallax-container {
     position: absolute;
-    top: 48px;
+    top: 24px;
     left: 24px;
     right: 24px;
     bottom: 24px;
@@ -62,20 +62,13 @@ body {
     padding-top: 15vh;
 }
 
-.content {
+.music-player {
     position: absolute;
-    bottom: 24px;
+    bottom: calc(24px + 72px); /* 24px above content div */
     left: 24px;
     right: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    color: black;
-    padding: 24px;
-}
-
-.music-player {
+    z-index: 10;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -91,15 +84,38 @@ body {
 }
 
 .music-services a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 0.8rem;
 }
 
-.subscribe {
+.content {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    background: white;
+    color: black;
+    padding: 24px;
+}
+
+.subscribe-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group {
+    display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid black;
+    font-family: inherit;
+    min-width: 200px;
 }
 
 .join-btn {
