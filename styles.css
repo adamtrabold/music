@@ -19,7 +19,7 @@ body {
     top: 24px;
     left: 24px;
     right: 24px;
-    bottom: 24px;
+    bottom: 144px;
     overflow: hidden;
     background: #000;
 }
@@ -30,7 +30,6 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    transition: transform 0.1s ease-out;
 }
 
 .sky img {
@@ -65,10 +64,9 @@ body {
 
 .music-player {
     position: absolute;
-    bottom: calc(24px + 72px);
+    bottom: 96px;
     left: 24px;
     right: 24px;
-    z-index: 10;
     color: white;
     display: flex;
     flex-direction: column;
@@ -82,18 +80,12 @@ body {
 .music-services {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .music-services a {
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
-    transition: opacity 0.2s;
-}
-
-.music-services a:hover {
-    opacity: 0.8;
 }
 
 .content {
@@ -132,7 +124,6 @@ body {
     padding: 0.5rem 2rem;
     cursor: pointer;
     font-family: inherit;
-    transition: all 0.2s;
 }
 
 .join-btn:hover {
