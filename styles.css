@@ -25,10 +25,10 @@ body {
 
 .parallax-layer {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+    height: 110%;
+    width: 110%;
+    top: -5%;
+    left: -5%;
 }
 
 .sky img {
@@ -63,7 +63,7 @@ body {
 
 .track-player {
     position: absolute;
-    top: -48px;
+    top: -66px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
