@@ -6,7 +6,7 @@
 
 body {
     overflow: hidden;
-    background: #000;
+    background: white;
     font-family: 'Playfair Display', serif;
     color: white;
     position: fixed;
@@ -14,24 +14,14 @@ body {
     height: 100%;
 }
 
-/* Add white border frame */
-body::before {
-    content: '';
-    position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    border: 3px solid white;
-    z-index: 100;
-    pointer-events: none;
-}
-
 .parallax-container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    position: absolute;
+    top: 48px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
     overflow: hidden;
+    background: #000;
 }
 
 .parallax-layer {
@@ -73,14 +63,16 @@ body::before {
 }
 
 .content {
-    position: fixed;
-    bottom: 3rem;
-    left: 3rem;
-    right: 3rem;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    background: white;
+    color: black;
+    padding: 24px;
 }
 
 .music-player {
@@ -99,7 +91,7 @@ body::before {
 }
 
 .music-services a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 0.8rem;
 }
@@ -112,14 +104,14 @@ body::before {
 
 .join-btn {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
     padding: 0.5rem 2rem;
     cursor: pointer;
     font-family: inherit;
 }
 
 .join-btn:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
 }
