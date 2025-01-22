@@ -9,6 +9,22 @@ body {
     background: #000;
     font-family: 'Playfair Display', serif;
     color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add white border frame */
+body::before {
+    content: '';
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    border: 2px solid white;
+    z-index: 100;
+    pointer-events: none;
 }
 
 .parallax-container {
@@ -58,10 +74,9 @@ body {
 
 .content {
     position: fixed;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
-    padding: 0 2rem;
+    bottom: 4rem; /* Adjusted to account for border */
+    left: 4rem; /* Adjusted to account for border */
+    right: 4rem; /* Added to account for border */
     display: flex;
     justify-content: space-between;
     align-items: center;
