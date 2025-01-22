@@ -23,3 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     container.addEventListener('mousemove', handleParallax);
 });
+
+
