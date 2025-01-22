@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sky img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.field img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vw;
+    font-weight: 700;
+    color: white;
+    text-transform: lowercase;
+}
+
+.name.first {
+    padding-bottom: 15vh;
+}
+
+.name.last {
+    padding-top: 15vh;
+}
+
+.content {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.track-info {
+    font-size: 0.9rem;
+}
+
+.music-services {
+    display: flex;
+    gap: 1rem;
+}
+
+.music-services a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.join-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.join-btn:hover {
+    background: white;
+    color: black;
+}
