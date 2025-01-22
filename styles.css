@@ -18,11 +18,11 @@ body {
 body::before {
     content: '';
     position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
-    bottom: 2rem;
-    border: 2px solid white;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border: 3px solid white;
     z-index: 100;
     pointer-events: none;
 }
@@ -74,9 +74,9 @@ body::before {
 
 .content {
     position: fixed;
-    bottom: 4rem; /* Adjusted to account for border */
-    left: 4rem; /* Adjusted to account for border */
-    right: 4rem; /* Added to account for border */
+    bottom: 3rem;
+    left: 3rem;
+    right: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
