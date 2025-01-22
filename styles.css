@@ -62,7 +62,7 @@ body {
 
 .track-player {
     margin: 24px;
-    padding: 0 24px;
+    margin-bottom: 48px;
 }
 
 .track-info {
@@ -77,6 +77,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 48px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-form {
@@ -155,6 +156,6 @@ body {
 
     .track-player {
         margin: 12px;
-        padding: 0 12px;
+        margin-bottom: 24px;
     }
 }
