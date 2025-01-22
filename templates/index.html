@@ -7,33 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="parallax-container">
         <div class="parallax-layer sky" data-speed="0.2">
-            <img src="attached_assets/sky_crop.png" alt="Sky">
+            <img src="{{ url_for('static', filename='img/sky_crop.png') }}" alt="Sky">
         </div>
         <div class="parallax-layer name first" data-speed="0.4">
             <span>adam</span>
         </div>
         <div class="parallax-layer field" data-speed="0.6">
-            <img src="attached_assets/fieldandadam.png" alt="Field">
+            <img src="{{ url_for('static', filename='img/fieldandadam.png') }}" alt="Field">
         </div>
         <div class="parallax-layer name last" data-speed="0.8">
             <span>trabold</span>
         </div>
     </div>
 
-    <div class="bottom-content">
-        <form class="subscribe-form">
-            <label for="email">SUBSCRIBE TO THE EMAIL LIST</label>
-            <div class="input-group">
-                <input type="email" id="email" name="email" required>
-                <button type="submit" class="join-btn">JOIN</button>
-            </div>
-        </form>
-
+    <div class="music-player">
+        <span class="track-info">Perpetual Care by Adam Trabold</span>
         <div class="music-services">
             <a href="#" class="spotify">Spotify</a>
             <a href="#" class="bandcamp">Bandcamp</a>
@@ -43,6 +36,16 @@
             <a href="#" class="amazon">Amazon Music</a>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="content">
+        <form class="subscribe-form">
+            <label for="email">SUBSCRIBE TO THE EMAIL LIST</label>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="join-btn">JOIN</button>
+            </div>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/parallax.js') }}"></script>
 </body>
 </html>

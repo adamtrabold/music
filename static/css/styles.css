@@ -16,10 +16,10 @@ body {
 
 .parallax-container {
     position: absolute;
-    top: 48px;
+    top: 24px;
     left: 24px;
     right: 24px;
-    bottom: 120px;
+    bottom: 24px;
     overflow: hidden;
     background: #000;
 }
@@ -63,40 +63,66 @@ body {
     padding-top: 15vh;
 }
 
-.bottom-content {
+.music-player {
+    position: absolute;
+    bottom: calc(24px + 72px);
+    left: 24px;
+    right: 24px;
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.track-info {
+    font-size: 0.9rem;
+}
+
+.music-services {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.music-services a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+}
+
+.music-services a:hover {
+    opacity: 0.8;
+}
+
+.content {
     position: absolute;
     bottom: 24px;
     left: 24px;
     right: 24px;
     background: white;
+    color: black;
     padding: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .subscribe-form {
-    flex: 1;
-    max-width: 400px;
-}
-
-.subscribe-form label {
-    display: block;
-    color: black;
-    margin-bottom: 8px;
-    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .input-group {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .subscribe-form input[type="email"] {
-    flex: 1;
     padding: 0.5rem;
     border: 1px solid black;
     font-family: inherit;
+    min-width: 200px;
 }
 
 .join-btn {
@@ -107,7 +133,6 @@ body {
     cursor: pointer;
     font-family: inherit;
     transition: all 0.2s;
-    white-space: nowrap;
 }
 
 .join-btn:hover {
@@ -115,43 +140,20 @@ body {
     color: white;
 }
 
-.music-services {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.music-services a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: opacity 0.2s;
-}
-
-.music-services a:hover {
-    opacity: 0.8;
-}
-
 @media (max-width: 768px) {
-    .bottom-content {
-        flex-direction: column;
-        gap: 2rem;
+    .parallax-container {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
     }
 
-    .subscribe-form {
-        max-width: 100%;
-    }
-
-    .music-services {
-        justify-content: flex-start;
+    .name {
+        font-size: 20vw;
     }
 
     .input-group {
         flex-direction: column;
-    }
-
-    .join-btn {
-        width: 100%;
+        align-items: stretch;
     }
 }
