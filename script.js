@@ -1,14 +1,27 @@
+// Cache busting mechanism
+function updateCSSVersion() {
+    const timestamp = new Date().getTime();
+    const cssLink = document.querySelector('link[href*="styles.css"]');
+    if (cssLink) {
+        cssLink.href = `styles.css?v=${timestamp}`;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Update CSS version on page load
+    updateCSSVersion();
+
+    // Existing parallax code
     const container = document.querySelector('.parallax-container');
     const layers = document.querySelectorAll('.parallax-layer');
 
     const handleParallax = (e) => {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
-        
+
         const centerX = window.innerWidth / 2;
         const centerY = window.innerHeight / 2;
-        
+
         const offsetX = (mouseX - centerX) / centerX;
         const offsetY = (mouseY - centerY) / centerY;
 
@@ -16,12 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const speed = parseFloat(layer.getAttribute('data-speed'));
             const x = -offsetX * 5 * speed;
             const y = -offsetY * 5 * speed;
-            
+
             layer.style.transform = `translate(${x}px, ${y}px)`;
         });
     };
 
     container.addEventListener('mousemove', handleParallax);
 });
-
-
