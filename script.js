@@ -1,15 +1,37 @@
 // Cache busting mechanism
 function updateCSSVersion() {
     const timestamp = new Date().getTime();
-    const cssLink = document.querySelector('link[href*="styles.css"]');
-    if (cssLink) {
-        cssLink.href = `styles.css?v=${timestamp}`;
+    const cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
+    cssLinks.forEach(link => {
+        const href = link.href.split('?')[0];
+        link.href = `${href}?v=${timestamp}`;
+    });
+}
+
+// Add development tools
+function addDevTools() {
+    if (process.env.NODE_ENV !== 'production') {
+        const devTools = document.createElement('div');
+        devTools.style.position = 'fixed';
+        devTools.style.bottom = '24px';
+        devTools.style.right = '24px';
+        devTools.style.zIndex = '9999';
+
+        const reloadButton = document.createElement('button');
+        reloadButton.textContent = 'Reload CSS';
+        reloadButton.style.padding = '8px 16px';
+        reloadButton.style.cursor = 'pointer';
+        reloadButton.addEventListener('click', updateCSSVersion);
+
+        devTools.appendChild(reloadButton);
+        document.body.appendChild(devTools);
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     // Update CSS version on page load
     updateCSSVersion();
+    addDevTools();
 
     // Existing parallax code
     const container = document.querySelector('.parallax-container');
@@ -36,3 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     container.addEventListener('mousemove', handleParallax);
 });
+
+// Add periodic CSS refresh during development
+if (process.env.NODE_ENV !== 'production') {
+    setInterval(updateCSSVersion, 5000); // Check for CSS updates every 5 seconds
+}
