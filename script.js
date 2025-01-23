@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Add timestamp to CSS link to prevent caching
+    const cssLink = document.querySelector('link[href="styles.css"]');
+    if (cssLink) {
+        cssLink.href = `styles.css?t=${Date.now()}`;
+    }
+
+    // Parallax effect
     const container = document.querySelector('.parallax-container');
     const layers = document.querySelectorAll('.parallax-layer');
 
