@@ -62,8 +62,8 @@ body {
 }
 
 .track-player {
-    position: fixed;
-    bottom: calc(100% + 24px);
+    position: absolute;
+    top: -66px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
