@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add timestamp to CSS link to prevent caching
-    const cssLink = document.querySelector('link[href="styles.css"]');
+    // Generate a unique version for CSS
+    const cssVersion = Math.floor(Math.random() * 1000000);
+    const cssLink = document.querySelector('link[href^="styles.css"]');
     if (cssLink) {
-        cssLink.href = `styles.css?t=${Date.now()}`;
+        const basePath = cssLink.href.split('?')[0];
+        cssLink.href = `${basePath}?v=${cssVersion}`;
     }
 
     // Parallax effect
