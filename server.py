@@ -10,7 +10,7 @@ class SimpleDevServer(SimpleHTTPRequestHandler):
         SimpleHTTPRequestHandler.end_headers(self)
 
 if __name__ == '__main__':
-    server_address = ('0.0.0.0', 5000)
+    server_address = ('0.0.0.0', 5001)
     httpd = HTTPServer(server_address, SimpleDevServer)
-    print('Development server running on port 5000...')
+    print('Development server running on port 5001...')
     httpd.serve_forever()
