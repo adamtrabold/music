@@ -80,7 +80,7 @@ body {
     padding: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
     bottom:0;
     background:#fff;
