@@ -132,7 +132,18 @@ body {
 .music-services a {
     color: black;
     text-decoration: none;
-    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.music-services img {
+    height: 24px;
+    width: auto;
+    transition: opacity 0.2s ease;
+}
+
+.music-services a:hover img {
+    opacity: 0.7;
 }
 
 @media (max-width: 768px) {
