@@ -1,5 +1,7 @@
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import os
+import hashlib
+import time
 
 class NoCacheHTTPRequestHandler(SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -9,6 +11,7 @@ class NoCacheHTTPRequestHandler(SimpleHTTPRequestHandler):
         self.send_header('Expires', '0')
         self.send_header('Last-Modified', 'Thu, 01 Jan 1970 00:00:00 GMT')
         self.send_header('Vary', '*')
+        self.send_header('ETag', str(time.time()))  # Force unique ETag on every request
         SimpleHTTPRequestHandler.end_headers(self)
 
     def do_GET(self):
