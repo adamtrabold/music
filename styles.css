@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'Blackbike-Clean';
-    src: url('attached_assets/fonts/Blackbike-Clean.woff2') format('woff2'),
-         url('attached_assets/fonts/Blackbike-Clean.woff') format('woff'),
-         url('attached_assets/fonts/Blackbike-Clean.ttf') format('truetype'),
-         url('attached_assets/fonts/Blackbike-Clean.svg#Blackbike-Clean') format('svg');
+    src: 
+        url('attached_assets/fonts/Blackbike-Clean.otf') format('opentype'),
+        url('attached_assets/fonts/Blackbike-Clean.woff2') format('woff2'),
+        url('attached_assets/fonts/Blackbike-Clean.woff') format('woff'),
+        url('attached_assets/fonts/Blackbike-Clean.ttf') format('truetype'),
+        url('attached_assets/fonts/Blackbike-Clean.svg#Blackbike-Clean') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,7 +22,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background: #444;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Blackbike-Clean','Playfair Display', serif;
     color: #00071C;
     min-height: 100vh;
 }
