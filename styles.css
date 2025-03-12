@@ -108,6 +108,7 @@ body {
     margin-bottom: 12px;
     font-size: 0.8rem;
     text-transform: uppercase;
+    font-family: 'PPFuji', sans-serif;
 }
 
 .input-group {
@@ -119,7 +120,7 @@ body {
     flex: 1;
     padding: 8px 12px;
     border: 1px solid black;
-    font-family: inherit;
+    font-family: 'PPFuji', sans-serif;
 }
 
 .join-btn {
@@ -128,7 +129,8 @@ body {
     color: #00071C;
     padding: 8px 24px;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'PPFuji', sans-serif;
+    font-weight: bold;
 }
 
 .join-btn:hover {
