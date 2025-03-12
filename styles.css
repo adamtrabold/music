@@ -56,7 +56,7 @@ body {
     width:100vw;
     min-height:100vh;
     overflow: hidden;
-    background: #000;
+    background: #00071C;
     border:24px #fff solid;
 }
 
@@ -132,7 +132,7 @@ body {
 .input-group {
     display: flex;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid #00071C;
     height: 54px;
 }
 
@@ -147,7 +147,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: #000;
+    color: #00071C;
 }
 
 .email-input::placeholder {
@@ -162,14 +162,14 @@ body {
 .join-btn {
     background: transparent;
     border: none;
-    border-left: 1px solid #000;
+    border-left: 1px solid #00071C;
     padding: 0 16px;
     font-family: 'PPFuji', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: #000;
+    color: #00071C;
     cursor: pointer;
 }
 
