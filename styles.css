@@ -87,18 +87,19 @@ body {
 .name {
     display: flex;
     justify-content: left;
-    align-items: left;
-    font-size: 32vw;
+    align-items: center;
+    font-size: 28vw;
     color: white;
+    padding-left:64px;
 }
 
 .name.first {
-    top:-136px;
+    margin-top:-20vh;
 }
 
 .name.last {
-    padding-top: 26vh;
-    padding-left:28px;
+    padding-top:24vh;
+    padding-left:calc(64px + 128px);
 }
 
 .track-player {
@@ -187,8 +188,8 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding-left:12px;
-    padding-right:12px;
+    padding-left:24px;
+    padding-right:24px;
     border-right:1px solid #D9DADD;
 }
 .music-services a.amazon {
