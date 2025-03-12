@@ -132,14 +132,14 @@ body {
 .input-group {
     display: flex;
     width: 100%;
-    border: 1px solid #00071C;
-    height: 54px;
+    padding:16px 24px;
+    border: 1px solid #D9DADD;
 }
 
 .email-input {
     flex: 1;
     height: 100%;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     border: none;
     outline: none;
     background: transparent;
@@ -151,7 +151,7 @@ body {
 }
 
 .email-input::placeholder {
-    color: #B1B1B1;
+    color: #D9DADD;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -162,7 +162,6 @@ body {
 .join-btn {
     background: transparent;
     border: none;
-    border-left: 1px solid #00071C;
     padding: 0 16px;
     font-family: 'PPFuji', sans-serif;
     font-weight: bold;
@@ -189,7 +188,7 @@ body {
     align-items: center;
     padding-left:12px;
     padding-right:12px;
-    border-right:1px solid #D2D0CE;
+    border-right:1px solid #D9DADD;
 }
 .music-services a.amazon {
     border-right:0;
