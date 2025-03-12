@@ -11,6 +11,30 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'PPFuji';
+    src: 
+        url('attached_assets/fonts/PPFuji-Light.otf') format('opentype'),
+        url('attached_assets/fonts/PPFuji-Light.woff2') format('woff2'),
+        url('attached_assets/fonts/PPFuji-Light.woff') format('woff'),
+        url('attached_assets/fonts/PPFuji-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPFuji';
+    src: 
+        url('attached_assets/fonts/PPFuji-Bold.otf') format('opentype'),
+        url('attached_assets/fonts/PPFuji-Bold.woff2') format('woff2'),
+        url('attached_assets/fonts/PPFuji-Bold.woff') format('woff'),
+        url('attached_assets/fonts/PPFuji-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
