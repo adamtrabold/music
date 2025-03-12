@@ -125,27 +125,34 @@ body {
 
 .subscribe-form {
     min-width: 300px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .subscribe-form label {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: 'PPFuji', sans-serif;
+    color: #B1B1B1;
 }
 
 .input-group {
     display: flex;
-    gap: 12px;
+    width: 100%;
+    border: 1px solid #D0D0D0;
+    background-color: #F5F5F3;
+    align-items: center;
 }
 
 .subscribe-form input[type="email"] {
     flex: 1;
-    padding: 8px 12px;
-    border: 1px solid black;
+    padding: 20px;
+    border: none;
+    background: transparent;
     font-family: 'PPFuji', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -154,20 +161,19 @@ body {
 
 .join-btn {
     background: transparent;
-    border: 1px solid #00071C;
+    border: none;
     color: #00071C;
-    padding: 8px 24px;
+    padding: 20px 30px;
     cursor: pointer;
     font-family: 'PPFuji', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: 1px;
 }
 
 .join-btn:hover {
-    background: #00071C;
-    color: white;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .music-services {
