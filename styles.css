@@ -64,29 +64,12 @@ body {
     border:24px #fff solid;
 }
 
-.shadow-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    pointer-events: none;
-    background: radial-gradient(
-        ellipse at center,
-        rgba(0,7,28,0) 30%,
-        rgba(0,7,28,0.15) 70%,
-        rgba(0,7,28,0.25) 100%
-    );
-}
-
 .parallax-layer {
     position: absolute;
     height: 110%;
     width: 110%;
     top: -5%;
     left: -5%;
-    z-index: 20;
 }
 
 .sky img {
