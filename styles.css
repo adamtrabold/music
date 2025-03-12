@@ -130,7 +130,9 @@ body {
 .subscribe-form label {
     display: block;
     margin-bottom: 12px;
-    font-size: 0.8rem;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-family: 'PPFuji', sans-serif;
 }
@@ -145,6 +147,9 @@ body {
     padding: 8px 12px;
     border: 1px solid black;
     font-family: 'PPFuji', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 
 .join-btn {
@@ -155,6 +160,9 @@ body {
     cursor: pointer;
     font-family: 'PPFuji', sans-serif;
     font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 
 .join-btn:hover {
