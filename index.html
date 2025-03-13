@@ -31,12 +31,19 @@
         <div class="track-player">
             <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1060448766/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://adamtrabold.bandcamp.com/album/perpetual-care">Perpetual Care by Adam Trabold</a></iframe>
         </div>
-        <form class="subscribe-form">
-            <div class="input-group">
-                <input type="email" placeholder="SUBSCRIBE TO THE EMAIL LIST" class="email-input">
-                <button type="submit" class="join-btn">JOIN</button>
-            </div>
-        </form>
+        <!-- Replace this form with a Mailchimp embedded form -->
+        <div id="mc_embed_signup" class="subscribe-form">
+            <form action="https://[YOUR-MAILCHIMP-FORM-URL]" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div class="input-group">
+                    <input type="email" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="SUBSCRIBE TO THE EMAIL LIST" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_[YOUR-FORM-ID]" tabindex="-1" value="">
+                    </div>
+                    <button type="submit" class="join-btn">JOIN</button>
+                </div>
+            </form>
+        </div>
 
         <div class="music-services">
             <a href="https://adamtrabold.bandcamp.com/" class="bandcamp" target="_blank" rel="noopener noreferrer"><img src="./attached_assets/svg/bandcamp.svg" width="88" alt="Bandcamp"></a>
