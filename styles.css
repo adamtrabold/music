@@ -1,4 +1,5 @@
 
+/* Font Declarations */
 @font-face {
     font-family: 'Blackbike-Clean';
     src: 
@@ -36,26 +37,27 @@
     font-display: swap;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
     position: relative;
+    min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     background: #444;
     font-family: 'Blackbike-Clean','Playfair Display', serif;
     color: #00071C;
-    -webkit-box-shadow: inset 0px 0px 32px 0px rgba(0,7,28,0.15);
-    -moz-box-shadow: inset 0px 0px 32px 0px rgba(0,7,28,0.15);
     box-shadow: inset 0px 0px 32px 0px rgba(0,7,28,0.15);
-    min-height: 100vh;
     transition: scale 0.6s ease-in-out;
 }
 
+/* Layout */
 .parallax-container {
     position: relative;
     width: 100vw;
@@ -73,18 +75,15 @@ body {
     left: -5%;
 }
 
-.sky img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Images */
+.sky img,
 .field img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Typography */
 .name {
     display: flex;
     justify-content: left;
@@ -103,6 +102,7 @@ body {
     padding-left: calc(64px + 128px);
 }
 
+/* Track Player */
 .track-player {
     position: absolute;
     top: -66px;
@@ -117,6 +117,7 @@ body {
     z-index: 1000;
 }
 
+/* Bottom Content */
 .bottom-content {
     position: fixed;
     width: 100vw;
@@ -128,17 +129,11 @@ body {
     background: #fff;
 }
 
+/* Subscribe Form */
 .subscribe-form {
     width: 100%;
     min-width: 250px;
     max-width: 424px;
-}
-
-.music-services {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .input-group {
@@ -190,10 +185,12 @@ body {
     transform: scale(1.02);
 }
 
+/* Music Services */
 .music-services {
     display: flex;
     height: 32px;
     align-self: center;
+    width: 100%;
 }
 
 .music-services a {
@@ -202,8 +199,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 24px;
     border-right: 1px solid #D9DADD;
 }
 
@@ -236,7 +232,6 @@ body {
     
     .music-services {
         flex-direction: column;
-        width: 100%;
     }
     
     .music-services a {
@@ -260,7 +255,6 @@ body {
 
     .subscribe-form {
         flex: 1;
-        flex-shrink: 1;
     }
 
     .music-services {
