@@ -234,7 +234,6 @@ body {
         flex-wrap: wrap;
         gap: 1px;
         height: auto;
-        background: #D9DADD;
         width: 100%;
         justify-content: center;
     }
@@ -244,15 +243,25 @@ body {
         height: auto;
         justify-content: center;
         padding: 24px;
-        border: none;
-        background: #fff;
         display: flex;
         align-items: center;
     }
+        .music-services a.tidal {
+            border-right:none;
+        }
 
     @media (max-width: 600px) {
         .music-services a {
             flex: 0 0 calc(50% - 1px);
+        }
+        .music-services a.tidal {
+            border-right:1px solid #D9DADD;
+        }
+        .music-services a.apple,.music-services a.spotify,.music-services a.amazon {
+            border-right:none;
+        }
+        .music-services a.bandcamp,.music-services a.apple,.music-services a.tidal,.music-services a.spotify {
+            border-bottom:1px solid #D9DADD;
         }
     }
 
