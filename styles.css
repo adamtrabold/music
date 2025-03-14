@@ -128,8 +128,16 @@ body {
 }
 
 .subscribe-form {
-    width: 75%;
-    max-width: 424px;
+    min-width: 20%;
+    width: 424px;
+    flex-shrink: 1;
+}
+
+.music-services {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
 }
 
 .input-group {
