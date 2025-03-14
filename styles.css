@@ -234,6 +234,23 @@ body {
         width: 100%;
         max-width: 100%;
     }
+    
+    .music-services {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .music-services a {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 0;
+        border-right: none;
+        border-bottom: 1px solid #D9DADD;
+    }
+    
+    .music-services a.amazon {
+        border-bottom: none;
+    }
 }
 
 @media (min-width: 900px) {
@@ -251,28 +268,5 @@ body {
         flex: 2;
         justify-content: flex-end;
         flex-wrap: nowrap;
-    }
-}
-
-@media (max-width: 900px) {
-    .music-services a {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .music-services {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1200px) {
-    .music-services a {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    .music-services a.amazon {
-        padding-right: 0;
     }
 }
