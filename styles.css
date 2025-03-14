@@ -128,19 +128,6 @@ body {
     background: #fff;
 }
 
-@media (max-width: 900px) {
-    .bottom-content {
-        position: static;
-        margin-top: 66px;
-    }
-    
-    .track-player {
-        position: fixed;
-        top: 0;
-        width: calc(100% - 24px);
-    }
-}
-
 .subscribe-form {
     width: 100%;
     min-width: 250px;
