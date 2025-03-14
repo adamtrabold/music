@@ -194,6 +194,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     height: 32px;
+    align-self: center;
 }
 
 .music-services a {
