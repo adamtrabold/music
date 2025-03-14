@@ -232,17 +232,11 @@ body {
     
     .music-services {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1px;
         height: auto;
         background: #D9DADD;
         width: 100%;
-        justify-items: center;
-    }
-    
-    .music-services::after {
-        content: "";
-        flex: auto;
     }
     
     .music-services a {
@@ -254,6 +248,14 @@ body {
         background: #fff;
         display: flex;
         align-items: center;
+    }
+
+    .music-services a:last-child:nth-child(3n + 1) {
+        grid-column: span 3;
+    }
+
+    .music-services a:last-child:nth-child(3n + 2) {
+        grid-column: span 2;
     }
 }
 
