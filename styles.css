@@ -237,6 +237,12 @@ body {
         height: auto;
         background: #D9DADD;
         width: 100%;
+        justify-items: center;
+    }
+    
+    .music-services::after {
+        content: "";
+        flex: auto;
     }
     
     .music-services a {
@@ -248,14 +254,6 @@ body {
         background: #fff;
         display: flex;
         align-items: center;
-    }
-
-    .music-services a:last-child:nth-child(3n - 1) {
-        grid-column-end: -2;
-    }
-    
-    .music-services a:last-child:nth-child(3n - 2) {
-        grid-column-end: -3;
     }
 }
 
