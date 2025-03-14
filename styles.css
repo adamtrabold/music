@@ -234,8 +234,18 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1px;
-        height:auto;
+        height: auto;
         background: #D9DADD;
+        width: 100%;
+    }
+    
+    .music-services::after {
+        content: '';
+        grid-column: 1 / -1;
+    }
+
+    .music-services > * {
+        margin: 0 auto;
     }
     
     .music-services a {
