@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Blackbike-Clean';
     src: 
@@ -57,11 +58,11 @@ body {
 
 .parallax-container {
     position: relative;
-    width:100vw;
-    min-height:100vh;
+    width: 100vw;
+    min-height: 100vh;
     overflow: hidden;
     background: #00071C;
-    border:24px #fff solid;
+    border: 24px #fff solid;
 }
 
 .parallax-layer {
@@ -90,16 +91,16 @@ body {
     align-items: center;
     font-size: 28vw;
     color: white;
-    padding-left:64px;
+    padding-left: 64px;
 }
 
 .name.first {
-    margin-top:-20vh;
+    margin-top: -20vh;
 }
 
 .name.last {
-    padding-top:24vh;
-    padding-left:calc(64px + 128px);
+    padding-top: 24vh;
+    padding-left: calc(64px + 128px);
 }
 
 .track-player {
@@ -108,10 +109,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    max-width:700px;
+    max-width: 700px;
     height: 42px;
     padding: 0;
-    margin: 0;
+    margin: 12px;
+    margin-bottom: 24px;
     z-index: 1000;
 }
 
@@ -137,24 +139,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-@media (min-width: 900px) {
-    .bottom-content {
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .subscribe-form {
-        flex: 1;
-        flex-shrink: 1;
-    }
-
-    .music-services {
-        flex: 2;
-        justify-content: flex-end;
-        flex-wrap: nowrap;
-    }
 }
 
 .input-group {
@@ -202,7 +186,7 @@ body {
 }
 
 .join-btn:hover {
-    transform:scale(1.02);
+    transform: scale(1.02);
 }
 
 .music-services {
@@ -220,16 +204,10 @@ body {
     border-right: 1px solid #D9DADD;
 }
 
-@media (max-width: 900px) {
-    .music-services a {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+.music-services a.amazon {
+    padding-right: 0;
+    border-right: 0;
 }
-    .music-services a.amazon {
-        padding-right:0;
-        border-right:0;
-    }
 
 .music-services img {
     max-width: 100%;
@@ -237,21 +215,37 @@ body {
 }
 
 .music-services a.amazon img {
-    position:relative;
-    top:2px;
+    position: relative;
+    top: 2px;
 }
 
 .music-services a:hover img {
-    transform:scale(1.02);
+    transform: scale(1.02);
 }
 
-@media (max-width: 1200px) {
+/* Responsive Styles */
+@media (min-width: 900px) {
+    .bottom-content {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .subscribe-form {
+        flex: 1;
+        flex-shrink: 1;
+    }
+
+    .music-services {
+        flex: 2;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 900px) {
     .music-services a {
         padding-left: 12px;
         padding-right: 12px;
-    }
-    .music-services a.amazon {
-        padding-right:0;
     }
 }
 
@@ -261,7 +255,12 @@ body {
     }
 }
 
-.track-player {
-    margin: 12px;
-    margin-bottom: 24px;
+@media (max-width: 1200px) {
+    .music-services a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .music-services a.amazon {
+        padding-right: 0;
+    }
 }
