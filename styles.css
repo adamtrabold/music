@@ -116,27 +116,43 @@ body {
 }
 
 .bottom-content {
-    position:fixed;
-    width:100vw;
+    position: fixed;
+    width: 100vw;
     padding: 24px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 24px;
-    bottom:0;
-    background:#fff;
+    bottom: 0;
+    background: #fff;
 }
 
 .subscribe-form {
-    width: 20%;
-    max-width: 424px;
-    flex-shrink: 0;
+    width: 100%;
 }
 
 .music-services {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+@media (min-width: 900px) {
+    .bottom-content {
+        flex-direction: row;
+    }
+
+    .subscribe-form {
+        max-width: 424px;
+        flex-shrink: 0;
+    }
+
+    .music-services {
+        flex: 1;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
 }
 
 .input-group {
@@ -236,31 +252,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .bottom-content {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .subscribe-form {
-        min-width: unset;
-        max-width: unset;
-        width: 100%;
-    }
-    .email-input {
-        width:100%;
-        text-align:center;
-    }
-    .input-group {
-        flex-direction: column;
-    }
-
-    .join-btn {
-        width: 100%;
-    }
-
-    .track-player {
-        margin: 12px;
-        margin-bottom: 24px;
-    }
+.track-player {
+    margin: 12px;
+    margin-bottom: 24px;
 }
