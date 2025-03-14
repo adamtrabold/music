@@ -1,4 +1,3 @@
-
 /* Font Declarations */
 @font-face {
     font-family: 'Blackbike-Clean';
@@ -229,18 +228,19 @@ body {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .music-services {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         gap: 1px;
         height: auto;
         background: #D9DADD;
         width: 100%;
+        justify-content: center;
     }
-    
+
     .music-services a {
-        width: 100%;
+        flex: 0 0 calc(33.333% - 1px);
         height: auto;
         justify-content: center;
         padding: 24px;
@@ -250,31 +250,16 @@ body {
         align-items: center;
     }
 
-    .music-services a:last-child:nth-child(3n + 1) {
-        grid-column: span 3;
+    @media (max-width: 600px) {
+        .music-services a {
+            flex: 0 0 calc(50% - 1px);
+        }
     }
 
-    .music-services a:last-child:nth-child(3n + 2) {
-        grid-column: span 2;
-    }
-}
-
-@media (max-width: 600px) {
-    .music-services {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 400px) {
-    .music-services {
-        grid-template-columns: 1fr;
-    }
-    .music-services a.bandcamp {
-        padding-top:0;
-    }
-    
-    .music-services a.amazon {
-        border-bottom: none;
+    @media (max-width: 400px) {
+        .music-services a {
+            flex: 0 0 100%;
+        }
     }
 }
 
