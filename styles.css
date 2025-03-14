@@ -146,11 +146,12 @@ body {
     padding: 16px 24px;
     border: 1px solid #D9DADD;
     align-items: center;
+    gap: 12px;
 }
 
 .email-input {
-    flex: 1;
-    height: 100%;
+    width: 100%;
+    min-width: 0;
     border: none;
     outline: none;
     background: transparent;
@@ -182,7 +183,7 @@ body {
     color: #00071C;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    white-space: nowrap;
 }
 
 .join-btn:hover {
