@@ -194,7 +194,7 @@ body {
 }
 
 .music-services a {
-    height: 100%;
+    height:100%;
     color: #00071C;
     text-decoration: none;
     display: flex;
@@ -236,10 +236,14 @@ body {
     
     .music-services a {
         width: 100%;
+        height: auto;
         justify-content: center;
-        padding: 12px 0;
+        padding: 24px 0;
         border-right: none;
         border-bottom: 1px solid #D9DADD;
+    }
+    .music-services a.bandcamp {
+        padding-top:0;
     }
     
     .music-services a.amazon {
@@ -250,7 +254,7 @@ body {
 @media (min-width: 900px) {
     .bottom-content {
         flex-direction: row;
-        gap: 16px;
+        gap: 24px;
     }
 
     .subscribe-form {
