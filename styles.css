@@ -213,9 +213,16 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding-left:24px;
-    padding-right:24px;
-    border-right:1px solid #D9DADD;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #D9DADD;
+}
+
+@media (max-width: 900px) {
+    .music-services a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
     .music-services a.amazon {
         padding-right:0;
