@@ -232,43 +232,31 @@ body {
     .music-services {
         display: flex;
         flex-wrap: wrap;
-        gap: 1px;
-        height: auto;
-        width: 100%;
-        justify-content: center;
+        background: #D9DADD;
     }
 
     .music-services a {
-        flex: 0 0 calc(33.333% - 1px);
+        flex: 1 1 33.333%;
+        min-width: calc(33.333% - 1px);
         height: auto;
         justify-content: center;
         padding: 24px;
-        display: flex;
-        align-items: center;
+        background: white;
+        margin: 0.5px;
     }
-        .music-services a.tidal {
-            border-right:none;
-        }
+}
 
-    @media (max-width: 600px) {
-        .music-services a {
-            flex: 0 0 calc(50% - 1px);
-        }
-        .music-services a.tidal {
-            border-right:1px solid #D9DADD;
-        }
-        .music-services a.apple,.music-services a.spotify,.music-services a.amazon {
-            border-right:none;
-        }
-        .music-services a.bandcamp,.music-services a.apple,.music-services a.tidal,.music-services a.spotify {
-            border-bottom:1px solid #D9DADD;
-        }
+@media (max-width: 600px) {
+    .music-services a {
+        flex: 1 1 50%;
+        min-width: calc(50% - 1px);
     }
+}
 
-    @media (max-width: 400px) {
-        .music-services a {
-            flex: 0 0 100%;
-        }
+@media (max-width: 400px) {
+    .music-services a {
+        flex: 1 1 100%;
+        min-width: calc(100% - 1px);
     }
 }
 
