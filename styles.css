@@ -224,6 +224,13 @@ body {
 }
 
 /* Responsive Styles */
+@media (max-width: 900px) {
+    .subscribe-form {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 900px) {
     .bottom-content {
         flex-direction: row;
