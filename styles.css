@@ -252,6 +252,7 @@ body {
     }
 
 }
+
 @media (min-width: 900px) {
     .bottom-content {
         flex-direction: row;
@@ -267,6 +268,13 @@ body {
     .subscribe-form {
         flex: 1;
         max-width: 424px;
+    }
+}
+
+@media (min-width:400px) and (max-width: 900px) {
+    /* Between Ultra Narrow + Narrow */
+    .track-player {
+        top: -90px;
     }
 }
 
@@ -309,9 +317,24 @@ body {
 
 /* Responsive Styles - Height */
 @media (max-width: 900px) and (max-height: 801px) {
-    /* Tall mobile phones */
+    /* Narrow + Short */
     .parallax-container {
         min-height: 78vh;
+    }
+    
+    .bottom-content {
+        position: relative;
+        padding-top:0;
+    }
+}
+
+@media (max-width: 900px) and (min-height: 800px) {
+    /* Narrow + Tall */
+    .parallax-container {
+        min-height: 78vh;
+    }
+    .name {
+        align-items: top;
     }
     .bottom-content {
         position: relative;
@@ -319,10 +342,8 @@ body {
     }
 }
 
-@media (min-width: 400px) and (max-width: 900px) and (max-height: 801px) {
-    .track-player {
-        top: -90px;
-    }
+@media (min-width: 400px) and (max-width: 900px) and (min-height: 801px) {
+    /* Between Ultra Narrow and Narrow + Tall */
 }
 
 @media (max-width: 600px) and (min-height: 700px) and (max-height: 799px) {
