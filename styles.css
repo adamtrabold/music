@@ -89,7 +89,6 @@ body {
     align-items: center;
     font-size: 28vw;
     color: white;
-    padding-left: 64px;
 }
 
 .name.first {
@@ -98,7 +97,7 @@ body {
 
 .name.last {
     padding-top: 24vh;
-    padding-left: calc(64px + 128px);
+    padding-left: 16vw;
 }
 
 /* Track Player */
@@ -122,7 +121,7 @@ body {
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
     bottom: 0;
     background: #fff;
 }
@@ -223,8 +222,16 @@ body {
 
 /* Responsive Styles - Width */
 @media (max-width: 900px) {
+    
+    .bottom-content {
+        /* gap:0; */
+    }
+    
+    .track-player {
+        top: -90px;
+    }
+    
     .subscribe-form {
-        order: 2;
         width: 100%;
         max-width: 100%;
     }
@@ -232,23 +239,18 @@ body {
     .music-services {
         display: flex;
         flex-wrap: wrap;
-        order: 1;
-        gap: 1px;
         height: auto;
         width: 100%;
         justify-content: center;
     }
 
     .music-services a {
-        flex: 0 0 calc(33.333% - 1px);
+        display: flex;
         height: auto;
         justify-content: center;
-        padding: 24px;
-        display: flex;
+        padding: 12px;
         align-items: center;
-    }
-    .music-services a.bandcamp,.music-services a.apple,.music-services a.tidal {
-        border-bottom:1px solid #D9DADD;
+        border:none;
     }
 
 }
@@ -273,40 +275,31 @@ body {
 
 @media (min-width:400px) and (max-width: 900px) {
     /* Between Ultra Narrow + Narrow */
-    .track-player {
-        top: -90px;
-    }
 }
 
 @media (min-width: 600px) {
-    .music-services a.tidal {
-        border-right:none;
-    }
 }
 @media (max-width: 600px) {
+    .name.last {
+        padding-left: 12vw;
+    }
     .track-player {
-        width: 75%;
+        width: 80%;
     }
+    /* .bottom-content {
+        gap:12px;
+    } */
     .music-services a {
-        flex: 0 0 calc(50% - 1px);
-    }
-    .music-services a.apple,.music-services a.spotify, .music-services a.amazon {
-        border-right:none;
-    }
-    .music-services a.bandcamp,.music-services a.apple,.music-services a.tidal,.music-services a.spotify {
-        border-bottom:1px solid #D9DADD;
+        flex: 0 0 calc(33.33% - 1px);
     }
 }
 
 @media (max-width: 400px) {
-    .parallax-container {
-        border-bottom: none;
-    }
     .track-player {
         width: calc(100% - 84px);
     }
     .music-services a {
-        flex: 0 0 100%;
+        flex: 0 auto;
         border:none;
     }
 
@@ -356,4 +349,19 @@ body {
 
 @media (max-width: 600px) and (max-height: 599px) {
     /* Very short mobile phones / landscape mode */
+}
+
+@media (max-width: 600px) and (min-height: 599px) {
+    .name {
+        align-items: flex-start;
+        font-size:26vw;
+        padding:0;
+    }
+    .name.first {
+        margin-top: 0;
+    }
+    .name.last {
+        padding-top: 24vw;
+        padding-left: 10vw;
+    }
 }
