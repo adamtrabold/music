@@ -224,6 +224,7 @@ body {
 /* Responsive Styles - Width */
 @media (max-width: 900px) {
     .subscribe-form {
+        order: 2;
         width: 100%;
         max-width: 100%;
     }
@@ -231,6 +232,7 @@ body {
     .music-services {
         display: flex;
         flex-wrap: wrap;
+        order: 1;
         gap: 1px;
         height: auto;
         width: 100%;
@@ -244,6 +246,9 @@ body {
         padding: 24px;
         display: flex;
         align-items: center;
+    }
+    .music-services a.bandcamp,.music-services a.apple,.music-services a.tidal {
+        border-bottom:1px solid #D9DADD;
     }
 
 }
