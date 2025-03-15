@@ -222,11 +222,6 @@ body {
 
 /* Responsive Styles - Width */
 @media (max-width: 900px) {
-    
-    .bottom-content {
-        /* gap:0; */
-    }
-    
     .track-player {
         top: -90px;
     }
@@ -252,7 +247,6 @@ body {
         align-items: center;
         border:none;
     }
-
 }
 
 @media (min-width: 900px) {
@@ -273,12 +267,6 @@ body {
     }
 }
 
-@media (min-width:400px) and (max-width: 900px) {
-    /* Between Ultra Narrow + Narrow */
-}
-
-@media (min-width: 600px) {
-}
 @media (max-width: 600px) {
     .name.last {
         padding-left: 12vw;
@@ -286,9 +274,6 @@ body {
     .track-player {
         width: 80%;
     }
-    /* .bottom-content {
-        gap:12px;
-    } */
     .music-services a {
         flex: 0 0 calc(33.33% - 1px);
     }
@@ -335,21 +320,7 @@ body {
     }
 }
 
-@media (min-width: 400px) and (max-width: 900px) and (min-height: 801px) {
-    /* Between Ultra Narrow and Narrow + Tall */
-}
 
-@media (max-width: 600px) and (min-height: 700px) and (max-height: 799px) {
-    /* Average-height mobile phones */
-}
-
-@media (max-width: 600px) and (min-height: 600px) and (max-height: 699px) {
-    /* Shorter mobile phones */
-}
-
-@media (max-width: 600px) and (max-height: 599px) {
-    /* Very short mobile phones / landscape mode */
-}
 
 @media (max-width: 600px) and (min-height: 599px) {
     .name {
