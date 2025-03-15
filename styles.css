@@ -253,18 +253,18 @@ body {
         gap: 24px;
     }
 
-    .music-services {
-        order: 1;
-        width: 100%;
-        justify-content: flex-end;
-        flex-wrap: nowrap;
-    }
-
     .subscribe-form {
         order: 2;
         width: 100%;
         max-width: 424px;
         align-self: center;
+    }
+
+    .music-services {
+        order: 1;
+        width: 100%;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
     }
 }
 
