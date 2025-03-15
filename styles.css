@@ -300,6 +300,9 @@ body {
     .parallax-container {
         min-height: 80vh;
     }
+    .bottom-content {
+        position: relative;
+    }
 }
 
 @media (max-width: 600px) and (min-height: 700px) and (max-height: 799px) {
