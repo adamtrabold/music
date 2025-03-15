@@ -295,3 +295,60 @@ body {
 }
 
 /* Responsive Styles - Height */
+/* Height-based breakpoints for mobile */
+@media (max-width: 600px) and (max-height: 800px) {
+    .parallax-container {
+        border-width: 16px;
+    }
+    
+    .name {
+        font-size: 24vw;
+    }
+    
+    .name.first {
+        margin-top: -10vh;
+    }
+    
+    .name.last {
+        padding-top: 16vh;
+        padding-left: calc(64px + 64px);
+    }
+}
+
+@media (max-width: 600px) and (max-height: 600px) {
+    .parallax-container {
+        border-width: 12px;
+    }
+    
+    .name {
+        font-size: 20vw;
+    }
+    
+    .name.first {
+        margin-top: -5vh;
+    }
+    
+    .name.last {
+        padding-top: 12vh;
+        padding-left: calc(32px + 64px);
+    }
+}
+
+@media (max-width: 600px) and (max-height: 400px) {
+    .parallax-container {
+        border-width: 8px;
+    }
+    
+    .name {
+        font-size: 16vw;
+    }
+    
+    .name.first {
+        margin-top: 0;
+    }
+    
+    .name.last {
+        padding-top: 8vh;
+        padding-left: calc(16px + 32px);
+    }
+}
