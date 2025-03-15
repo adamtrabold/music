@@ -32,6 +32,10 @@ run = ["sh", "-c", "python3 server.py"]
 deploymentTarget = "autoscale"
 
 [[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
 localPort = 5001
 externalPort = 80
 
