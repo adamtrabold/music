@@ -249,22 +249,19 @@ body {
 }
 @media (min-width: 900px) {
     .bottom-content {
-        flex-direction: column;
+        flex-direction: row;
         gap: 24px;
     }
 
     .music-services {
-        order: 1;
-        width: 100%;
+        flex: 2;
         justify-content: flex-end;
         flex-wrap: nowrap;
     }
 
     .subscribe-form {
-        order: 2;
-        width: 100%;
+        flex: 1;
         max-width: 424px;
-        align-self: center;
     }
 }
 
