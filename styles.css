@@ -295,3 +295,18 @@ body {
 }
 
 /* Responsive Styles - Height */
+@media (max-width: 600px) and (min-height: 800px) {
+    /* Tall mobile phones */
+}
+
+@media (max-width: 600px) and (min-height: 700px) and (max-height: 799px) {
+    /* Average-height mobile phones */
+}
+
+@media (max-width: 600px) and (min-height: 600px) and (max-height: 699px) {
+    /* Shorter mobile phones */
+}
+
+@media (max-width: 600px) and (max-height: 599px) {
+    /* Very short mobile phones / landscape mode */
+}
