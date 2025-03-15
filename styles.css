@@ -295,13 +295,17 @@ body {
 }
 
 /* Responsive Styles - Height */
-@media (max-width: 600px) and (min-height: 800px) and (max-height: 801px) {
+@media (max-width: 900px) and (max-height: 801px) {
     /* Tall mobile phones */
     .parallax-container {
         min-height: 80vh;
     }
     .bottom-content {
         position: relative;
+        padding-top:0;
+    }
+    .track-player {
+        top: -90px;
     }
 }
 
