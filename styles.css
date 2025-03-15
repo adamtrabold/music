@@ -295,8 +295,11 @@ body {
 }
 
 /* Responsive Styles - Height */
-@media (max-width: 600px) and (min-height: 800px) {
+@media (max-width: 600px) and (min-height: 800px) and (max-height: 801px) {
     /* Tall mobile phones */
+    .parallax-container {
+        min-height: 80vh;
+    }
 }
 
 @media (max-width: 600px) and (min-height: 700px) and (max-height: 799px) {
