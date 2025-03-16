@@ -60,7 +60,9 @@ body {
 .parallax-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; /* Fallback */
+    height: -webkit-fill-available;
+    height: 100dvh;
     overflow: hidden;
     background: #00071C;
     border: 24px #fff solid;
@@ -240,7 +242,7 @@ body {
     .track-player {
         top: -90px;
     }
-    
+
     .subscribe-form {
         width: 100%;
         max-width: 100%;
