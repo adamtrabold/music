@@ -319,9 +319,6 @@ body {
 
 @media (max-width: 900px) and (min-height: 800px) {
     /* Narrow + Tall */
-    .parallax-container {
-        min-height: 78vh;
-    }
     .name {
         align-items: top;
     }
