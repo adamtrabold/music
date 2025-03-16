@@ -19,7 +19,23 @@
 <body>
     <div class="parallax-container">
         <div class="parallax-layer sky" data-speed="0.2">
-            <img src="./attached_assets/sky.png" alt="Sky">
+            <picture>
+                <source
+                    type="image/webp"
+                    srcset="./attached_assets/sky@0.25x.webp 640w,
+                            ./attached_assets/sky@0.5x.webp 1280w,
+                            ./attached_assets/sky@0.75x.webp 1920w,
+                            ./attached_assets/sky.webp 2560w"
+                    sizes="100vw">
+                <img
+                    srcset="./attached_assets/sky@0.25x.png 640w,
+                            ./attached_assets/sky@0.5x.png 1280w,
+                            ./attached_assets/sky@0.75x.png 1920w,
+                            ./attached_assets/sky.png 2560w"
+                    sizes="100vw"
+                    src="./attached_assets/sky.png"
+                    alt="Sky">
+            </picture>
         </div>
         <div class="parallax-layer name first" data-speed="0.4">
             <span>Adam</span>

@@ -76,6 +76,7 @@ body {
 
 /* Images */
 .sky img,
+.sky picture,
 .field img,
 .field picture {
     width: 100%;
