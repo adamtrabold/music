@@ -295,6 +295,17 @@ body {
     }
 }
 
+/* field image positioning */
+@media (max-width:1920px) {
+    .sky img,
+    .sky picture,
+    .field img,
+    .field picture {
+        object-position:40%;
+    }
+    
+}
+
 /* Responsive Styles - Height */
 @media (max-width: 900px) and (max-height: 801px) {
     /* Narrow + Short */
