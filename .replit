@@ -11,10 +11,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Flask Preview"
+args = "Project"
 
 [[workflows.workflow]]
-name = "Flask Preview"
+name = "Project"
 author = "agent"
 
 [workflows.workflow.metadata]
@@ -25,7 +25,7 @@ task = "packager.installForAll"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python server.py"
+args = "cd . && python3 -m http.server --bind 0.0.0.0 5000"
 waitForPort = 5000
 
 [deployment]
