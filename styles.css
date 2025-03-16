@@ -324,7 +324,7 @@ body {
 
 
 
-@media (max-width: 600px) and (min-height: 599px) {
+@media (max-width: 600px) and (min-height: 800px) {
     .name {
         align-items: flex-start;
         font-size:26vw;
