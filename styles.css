@@ -308,7 +308,7 @@ body {
 @media (max-width: 900px) and (max-height: 801px) {
     /* Narrow + Short */
     .parallax-container {
-        min-height: 78vh;
+        min-height: 76vh;
     }
     
     .bottom-content {
