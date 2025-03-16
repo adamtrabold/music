@@ -61,8 +61,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh; /* Fallback */
-    height: -webkit-fill-available;
-    height: 100dvh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     background: #00071C;
     border: 24px #fff solid;

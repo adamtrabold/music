@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile viewport height adjustment
+    const setVH = () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    setVH();
+    window.addEventListener('resize', setVH);
+
     // Parallax effect
     const container = document.querySelector('.parallax-container');
     const layers = document.querySelectorAll('.parallax-layer');
