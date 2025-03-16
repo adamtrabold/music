@@ -223,6 +223,15 @@ body {
 }
 
 /* Responsive Styles - Width */
+@media (max-width:1920px) {
+    .sky img,
+    .sky picture,
+    .field img,
+    .field picture {
+        object-position:40%;
+    }
+
+}
 @media (max-width: 900px) {
     .track-player {
         top: -90px;
@@ -293,17 +302,6 @@ body {
     .subscribe-form {
         min-width: auto;
     }
-}
-
-/* field image positioning */
-@media (max-width:1920px) {
-    .sky img,
-    .sky picture,
-    .field img,
-    .field picture {
-        object-position:40%;
-    }
-    
 }
 
 /* Responsive Styles - Height */
