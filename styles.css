@@ -46,9 +46,7 @@
 /* Base Styles */
 body {
     position: relative;
-    min-height: 100vh;
-    /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+    min-height: 100dvh;
     overflow-x: hidden;
     overflow-y: auto;
     background: #444;
@@ -59,15 +57,13 @@ body {
 }
 
 html {
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 }
 
 /* Layout */
 .parallax-container {
     position: relative;
     width: 100vw;
-    height: 100vh; 
+    height: 100dvh; 
     /* Fallback */
     /* height: calc(var(--vh, 1vh) * 100); */
     overflow: hidden;
@@ -244,7 +240,7 @@ html {
 }
 @media (max-width: 900px) {
     .parallax-container {
-        min-height: calc(100vh - 28px);
+        min-height: calc(100dvh - 28px);
     }
     .track-player {
         top: -90px;
