@@ -61,9 +61,11 @@ body {
     position: relative;
     width: 100vw;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     overflow: hidden;
     background: #00071C;
     border: 24px #fff solid;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .parallax-layer {
