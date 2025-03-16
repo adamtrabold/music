@@ -233,6 +233,9 @@ body {
 
 }
 @media (max-width: 900px) {
+    .parallax-container {
+        min-height: calc(100vh - 28px);
+    }
     .track-player {
         top: -90px;
     }
@@ -307,10 +310,6 @@ body {
 /* Responsive Styles - Height */
 @media (max-width: 900px) and (max-height: 801px) {
     /* Narrow + Short */
-    .parallax-container {
-        min-height: 76vh;
-    }
-    
     .bottom-content {
         position: relative;
         padding-top:0;
