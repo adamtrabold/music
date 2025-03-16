@@ -238,7 +238,7 @@ html {
 }
 @media (max-width: 900px) {
     .parallax-container {
-        height: calc(100dvh - 32px);
+        height: calc(100dvh - 28px);
     }
     .track-player {
         top: -90px;
