@@ -47,6 +47,8 @@
 body {
     position: relative;
     min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
     overflow-x: hidden;
     overflow-y: auto;
     background: #444;
@@ -54,6 +56,11 @@ body {
     color: #00071C;
     box-shadow: inset 0px 0px 32px 0px rgba(0,7,28,0.15);
     transition: scale 0.6s ease-in-out;
+}
+
+html {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 /* Layout */
