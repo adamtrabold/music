@@ -60,8 +60,8 @@ body {
 .parallax-container {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     background: #00071C;
     border: 24px #fff solid;
