@@ -1,6 +1,6 @@
 # Adam Trabold
 
-> Official site of musician Adam Trabold. The homepage has an email list signup and links to his music on streaming services. It has no other pages, API or agent integrations.
+> Official site of musician Adam Trabold. The homepage has an email list signup and links to his music on streaming services. It has no other pages or API. Browser agents that support WebMCP can use two in-page tools: get_music_links and fill_email_signup.
 
 ## Music
 
@@ -13,4 +13,4 @@
 
 ## Email list
 
-- [Homepage](https://adamtrabold.com/): The signup form (handled by Mailchimp) is on the homepage. People join it themselves; agents should not sign anyone up on their behalf.
+- [Homepage](https://adamtrabold.com/): The signup form (handled by Mailchimp) is on the homepage. People join it themselves. An agent may fill in the visitor's own email when they ask (fill_email_signup), but the visitor presses JOIN; agents should never submit it for them or sign up anyone else.
