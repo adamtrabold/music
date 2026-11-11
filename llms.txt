@@ -1,0 +1,16 @@
+# Adam Trabold
+
+> Official site of musician Adam Trabold. The homepage has an email list signup and links to his music on streaming services. It has no other pages, API or agent integrations.
+
+## Music
+
+- [Bandcamp](https://adamtrabold.bandcamp.com/): Albums, including Perpetual Care, to stream or buy
+- [Perpetual Care](https://adamtrabold.bandcamp.com/album/perpetual-care): Album featured on the homepage
+- [Apple Music](https://music.apple.com/us/artist/adam-trabold/1491788174)
+- [Spotify](https://open.spotify.com/artist/49T3jSq6rsq3w1owrWnWWn)
+- [TIDAL](https://tidal.com/browse/artist/6216990)
+- [Amazon Music](https://amazon.com/music/player/artists/B0014OOMXC/adam-trabold)
+
+## Email list
+
+- [Homepage](https://adamtrabold.com/): The signup form (handled by Mailchimp) is on the homepage. People join it themselves; agents should not sign anyone up on their behalf.
