@@ -33,3 +33,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     container.addEventListener('mousemove', handleParallax);
 });
+// WebMCP: lets browser agents use this page on the visitor's behalf.
+// https://webmachinelearning.github.io/webmcp/
+(() => {
+    const modelContext = document.modelContext || navigator.modelContext;
+    if (!modelContext || typeof modelContext.registerTool !== 'function') return;
+
+    const musicLinks = () => Array.from(document.querySelectorAll('.music-services a'))
+        .map(a => ({ service: a.querySelector('img')?.alt || a.className, url: a.href }));
+
+    modelContext.registerTool({
+        name: 'get_music_links',
+        description: "Lists where to listen to Adam Trabold's music (Bandcamp, Apple Music, TIDAL, Spotify, Amazon Music).",
+        inputSchema: { type: 'object', properties: {} },
+        annotations: { readOnlyHint: true },
+        execute: async () => ({
+            content: [{ type: 'text', text: JSON.stringify(musicLinks()) }]
+        })
+    });
+
+    modelContext.registerTool({
+        name: 'fill_email_signup',
+        description: "Fills the visitor's email address into Adam Trabold's email list form. It does not subscribe them: the visitor must press JOIN themselves. Only use this when the visitor asks to join.",
+        inputSchema: {
+            type: 'object',
+            properties: {
+                email: { type: 'string', format: 'email', description: "The visitor's own email address" }
+            },
+            required: ['email']
+        },
+        execute: async ({ email }) => {
+            const input = document.getElementById('mce-EMAIL');
+            if (!input) throw new Error('Signup form not found');
+            input.value = String(email || '').trim();
+            if (!input.checkValidity()) throw new Error('That does not look like a valid email address');
+            input.focus();
+            input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return {
+                content: [{ type: 'text', text: 'Email filled in. Ask the visitor to press JOIN to subscribe.' }]
+            };
+        }
+    });
+})();
